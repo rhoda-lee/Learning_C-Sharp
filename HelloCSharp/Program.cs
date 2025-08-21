@@ -170,6 +170,126 @@ namespace HelloCSharp
             int theTime = 20;
             string resultTime = (time > 18) ? "Good evening!" : "Good day!";
             Console.WriteLine(resultTime);
+
+            //Switch case
+            /*Syntax:
+            switch (expression){
+                case x:
+                    block of code
+                    break;
+                case y:
+                    block of code
+                    break;
+                case z:
+                    block of code
+                    break;
+                default:
+                    block of code
+                    break;
+            }
+            */
+            int day = 4;
+            switch (4)
+            {
+                case 1:
+                    Console.WriteLine("Monday");
+                    break;
+                case 2:
+                    Console.WriteLine("Tuesday");
+                    break;
+                case 3:
+                    Console.WriteLine("Wednesday");
+                    break;
+                case 4:
+                    Console.WriteLine("Thursday");
+                    break;
+                case 5:
+                    Console.WriteLine("Friday");
+                    break;
+                case 6:
+                    Console.WriteLine("Saturday");
+                    break;
+                case 7:
+                    Console.WriteLine("Sunday");
+                    break;
+                default:
+                    Console.WriteLine("Enter number 1 to 7, as there are seven days in a week.");
+                    break;
+            }
+
+            //Loops
+
+            //While Loops
+            /*Syntax:
+            while(condition)
+            {
+                // do block of code;
+                increment++
+            }
+            */
+            int num = 0;
+            while (num < 5)
+            {
+                Console.WriteLine(num);
+                num++;
+            }
+
+            //Do while loop
+            /*Syntax:
+            do 
+            {
+                // block of code;
+            }
+            while (condition);
+            */
+            int number = 0;
+            do
+            {
+                Console.WriteLine(number);
+                number++;
+            }
+            while (number < 5);
+
+            //For Loop
+            /*Syntax:
+            for (statement1; statement2; statement3)
+            {
+                // do block of code
+            }
+            */
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(i);
+            }
+
+            //Nested loops:
+            for (int j = 1; j <= 2; ++j)
+            {
+                Console.WriteLine("Outer: " + j);
+                for (int k = 1; k <= 3; ++k)
+                {
+                    Console.WriteLine("Inner: " + k);
+                }
+            }
+
+            //For each loop: used to loop through an array or other data sets
+            /*Syntax:
+            foreach (type variableName in arrayName)
+            {
+                // some block of code
+            }
+            */
+            string[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
+            foreach (string car in cars)
+            {
+                Console.WriteLine(car);
+            }
+
+        
+
+
+
+
         }
     }
 }
