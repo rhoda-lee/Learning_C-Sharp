@@ -10,6 +10,22 @@ namespace CSharpClasses
             public string model = "Mustang";
             public int speed = 200;
         }
+        
+        // Create a Car class
+        class Car2
+        {
+            public string model;  // Create a field
+
+            // Create a class constructor for the Car class
+            public Car2()
+            {
+                model = "Mustang"; // Set the initial value for model
+            }
+                
+        
+        }
+
+        // Outputs "Mustang"
         static void Main(string[] args)
         {
             Console.WriteLine("----------------Classes in C#----------------");
@@ -53,31 +69,30 @@ namespace CSharpClasses
             It can be used to set initial values for fields:
             
             Example:
-            // Create a Car class
-            class Car
-            {
-            public string model;  // Create a field
-
-            // Create a class constructor for the Car class
-            public Car()
-            {
-                model = "Mustang"; // Set the initial value for model
-            }
-
-            static void Main(string[] args)
-            {
-                Car Ford = new Car();  // Create an object of the Car Class (this will call the constructor)
-                Console.WriteLine(Ford.model);  // Print the value of model
-            }
-            }
-
-            // Outputs "Mustang"
             Note that the constructor name must match the class name, and it cannot have a return type (like void or int).
             Also note that the constructor is called when the object is created.
             All classes have constructors by default: if you do not create a class constructor yourself, 
             C# creates one for you. However, then you are not able to set initial values for fields.
             Constructors save time! Take a look at the last example on this page to really understand why.
             */
+            Car2 Ford = new Car2();  // Create an object of the Car Class (this will call the constructor)
+            Console.WriteLine(Ford.model);  // Print the value of model
+
+            Console.WriteLine("----------------Properties----------------");
+
+            Console.WriteLine("Person 1:");
+            Person person1 = new Person();
+            person1.Name = "Julia";
+            Console.WriteLine(person1.Name);
+
+            Console.WriteLine("Person 2:");
+            Person person2 = new Person();
+            person2.Country = "Ghana";
+            Console.WriteLine(person2.Country);
+
+
+
+
 
 
 
