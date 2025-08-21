@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace HelloCSharp
 {
@@ -284,6 +285,44 @@ namespace HelloCSharp
             {
                 Console.WriteLine(car);
             }
+
+            //Arrays
+            string[] fruits = { "Apple", "Banana", "Orange", "Mango" };
+            int[] oddNums = { 1, 3, 5, 7, 9, 11, 13 };
+
+            //change array element
+            fruits[1] = "Grape";
+            Console.WriteLine(fruits[1]);
+
+            //length of an array:
+            Console.WriteLine(oddNums.Length);
+
+            //Loop through an array
+            for (int ca = 0; ca < cars.Length; ca++)
+            {
+                Console.WriteLine(cars[ca]);
+            }
+
+            //foreach
+            foreach (string carr in cars)
+            {
+                Console.WriteLine(carr);
+            }
+
+            //Sort an array with Array.Sort(arrayName)
+            // sort fruit array
+            Array.Sort(fruits);
+            foreach (string fruit in fruits)
+            {
+                Console.WriteLine(fruit);
+            }
+
+            //Using System.Linq namespace for Min, Max and Sum on arrays
+            Console.WriteLine(oddNums.Min());
+            Console.WriteLine(oddNums.Max());
+            Console.WriteLine(oddNums.Sum());
+
+            
 
         
 
