@@ -47,6 +47,38 @@ namespace CSharpClasses
             Human myObj5 = new Human();
             myObj5.Eat(); // call the method
 
+            Console.WriteLine("----------------Constructors----------------");
+            /*A constructor is a special method that is used to initialize objects. 
+            The advantage of a constructor, is that it is called when an object of a class is created. 
+            It can be used to set initial values for fields:
+            
+            Example:
+            // Create a Car class
+            class Car
+            {
+            public string model;  // Create a field
+
+            // Create a class constructor for the Car class
+            public Car()
+            {
+                model = "Mustang"; // Set the initial value for model
+            }
+
+            static void Main(string[] args)
+            {
+                Car Ford = new Car();  // Create an object of the Car Class (this will call the constructor)
+                Console.WriteLine(Ford.model);  // Print the value of model
+            }
+            }
+
+            // Outputs "Mustang"
+            Note that the constructor name must match the class name, and it cannot have a return type (like void or int).
+            Also note that the constructor is called when the object is created.
+            All classes have constructors by default: if you do not create a class constructor yourself, 
+            C# creates one for you. However, then you are not able to set initial values for fields.
+            Constructors save time! Take a look at the last example on this page to really understand why.
+            */
+
 
 
 
